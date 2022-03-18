@@ -133,7 +133,8 @@ tasks:
   # Downloading QBCore resources
   - action: download_github
     dest: ./resources/[qb]/qb-core
-    ref: main
+    # ref: main
+    ref: dev
     src: https://github.com/qbcore-framework/qb-core
 
   - action: download_github
@@ -282,10 +283,22 @@ tasks:
     ref: main
     src: https://github.com/qbcore-framework/qb-mechanicjob
 
+  # - action: download_github
+  #   dest: ./resources/[qb]/qb-phone
+  #   ref: main
+  #   src: https://github.com/qbcore-framework/qb-phone
+
+# AGREXIO Redesign phone 
   - action: download_github
     dest: ./resources/[qb]/qb-phone
     ref: main
-    src: https://github.com/qbcore-framework/qb-phone
+    src: https://github.com/ItzAGREXIO/qb-phone
+
+# qb-target
+    - action: download_github
+    dest: ./resources/[qb]/qb-target
+    ref: main
+    src: https://github.com/BerkieBb/qb-target
 
   - action: download_github
     dest: ./resources/[qb]/qb-vineyard
