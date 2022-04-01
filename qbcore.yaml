@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: QBCore Framework
-version: 2.2.2
+version: 2.2.4
 author: JericoFx & Kakarot & Hamy
 description: An advanced FiveM RP framework including jobs, gangs, housing & more!
 
@@ -34,7 +34,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/files/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/download/v2.1.1/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/download/v2.2.1/oxmysql.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/files/oxmysql.zip
@@ -137,11 +137,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-core
 
   - action: download_github
-    dest: ./resources/[qb]/qb-gangmenu
-    ref: main
-    src: https://github.com/qbcore-framework/qb-gangmenu
-
-  - action: download_github
     dest: ./resources/[qb]/qb-scoreboard
     ref: main
     src: https://github.com/qbcore-framework/qb-scoreboard
@@ -155,6 +150,11 @@ tasks:
     dest: ./resources/[qb]/qb-multicharacter
     ref: main
     src: https://github.com/qbcore-framework/qb-multicharacter
+    
+  - action: download_github
+    dest: ./resources/[qb]/qb-target
+    ref: main
+    src: https://github.com/BerkieBb/qb-target
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -185,11 +185,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-prison
 
   - action: download_github
-    dest: ./resources/[qb]/qb-blackjack
-    ref: main
-    src: https://github.com/qbcore-framework/qb-blackjack
-
-  - action: download_github
     dest: ./resources/[qb]/qb-atms
     ref: main
     src: https://github.com/qbcore-framework/qb-atms
@@ -200,9 +195,9 @@ tasks:
     src: https://github.com/qbcore-framework/qb-hud
 
   - action: download_github
-    dest: ./resources/[qb]/qb-bossmenu
+    dest: ./resources/[qb]/qb-management
     ref: main
-    src: https://github.com/qbcore-framework/qb-bossmenu
+    src: https://github.com/qbcore-framework/qb-management
 
   - action: download_github
     dest: ./resources/[qb]/qb-weed
@@ -351,11 +346,6 @@ tasks:
     dest: ./resources/[qb]/qb-cityhall
     ref: main
     src: https://github.com/qbcore-framework/qb-cityhall
-
-  - action: download_github
-    dest: ./resources/[qb]/qb-casino
-    ref: main
-    src: https://github.com/qbcore-framework/qb-casino
 
   - action: download_github
     dest: ./resources/[qb]/qb-anticheat
